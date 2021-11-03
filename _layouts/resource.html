@@ -1,0 +1,13 @@
+---
+layout: page
+title: Resources
+---
+{% if page.mathjax  %}
+<script type="text/javascript" async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+{% endif %}
+<div>
+	<h2>{{ page.title }} </h2>
+	{{page.subtitle}}
+    <p>{{ page.content | markdownify }}</p>
+    </div
+</div>

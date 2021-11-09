@@ -6,7 +6,7 @@
 # --- Required options --- #
 
 # Name of website
-title: allisons
+title: Accessible Data Science
 
 # Your name to show in the footer
 author: Allison Sliter
@@ -14,7 +14,7 @@ author: Allison Sliter
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: {{site.baseurl}}
+  Home: /
   About Me: "aboutme"
   Resources: "resources"
 

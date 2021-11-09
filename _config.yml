@@ -14,6 +14,7 @@ author: Allison Sliter
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Home: {{site.baseurl}}
   About Me: "aboutme"
   Resources: "resources"
 

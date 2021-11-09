@@ -18,7 +18,7 @@ Friend: "Should I get at home test?"
 
 Doctor: "Sure, but those have a high false negative rate, so I wouldn't trust it."
 
-And I thought, wait?  There are people thinking they're in the clear, but in reality, they're walking around with covid?  That doesn't sound right!  A medical test is a _classifier_:  a prediction system that outputs the labels "Sick" or "Healthy" and any classifier has misclassification error.  A test trying to identify a disease (especially a comunicable one!) is going to have _asymmetrical misclassification cost_.  Put in plain language:  it's better to think you have Covid-19 when you don't than it is to think you _don't_ have Covid-19 when you do. An at home test like that would be a disaster for public health.  You want the first easy test to be a _screener_, something that divides the world into "you're probably okay" and "you may not be okay, let's follow up."
+And I thought, wait?  There are people thinking they're in the clear, but in reality, they're walking around with covid?  That doesn't sound right!  A medical test is a _classifier_:  a prediction system that outputs the labels "Sick" or "Healthy" and any classifier has misclassification error.  A test trying to identify a disease (especially a comunicable one!) is going to have _asymmetrical misclassification cost_.  Put in plain language:  it's better to think you have Covid-19 when you don't than it is to think you _don't_ have Covid-19 when you do[^1]. An at home test like that would be a disaster for public health.  You want the first easy test to be a _screener_, something that divides the world into "you're probably okay" and "you may not be okay, let's follow up."
 
 So we looked up the sensitivity and specificity of the brand of Covid-19 antigen test that he bought.  Sure enough, the sensitivity was 74% and the specificity was 99%. 
 
@@ -72,12 +72,14 @@ It all comes down to the assumption made when we decided _how many people were a
 ![This figure shows how PPV and NPV change when the prevalance of a disease changes even when holding test specificity and sensitivity constant](/assets/img/pv.png)
 
 
+This figure shows how PPV and NPV change when the prevalance of a disease changes even when holding test specificity and sensitivity constant.  I've kept the population the same (297) and stepped up the total number of sick individuals from 1 to 297 for each point.  At each distribution of sick and healthy individuals, I've kept the proportion of sick individuals who test positive at 73% of all sick individuals and the proportion of healthy individuals who test negative at 99% of all healthy individuals. 
+
 
 In conclusion, the doctor wasn't wrong - the false negative rate is high when the sensitivity is low, but it matters what the prevalence of the disease is in your population if you want to tell a particular patient how to interpret their results from a test.  
 
+<hr>
 
-
-Footnote: To my original point (it's better to act like you have covid when you don't than it is to act like you don't have covid when you do), if you're in a situation where the background prevalance of covid is so high that a test like this gives you no better than a coin flip's chance of being covid-free, it's probably best that _everyone_ act like everyone has covid.  That's essentially what a lockdown is.  Before you have an accurate estimate of population prevalance, you can't accurately calculate a positive or negative predictive value.
+[^1]:If you're in a situation where the background prevalance of covid is so high that a test like this gives you no better than a coin flip's chance of being covid-free, it's probably best that _everyone_ act like everyone has covid.  That's essentially what a lockdown is.  Before you have an accurate estimate of population prevalance, you can't accurately calculate a positive or negative predictive value.
 
 
 Image by <a href="https://pixabay.com/users/v-a-n-3-ss-a-13670757/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5027031">v-a-n-3-ss-a</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5027031">Pixabay</a>

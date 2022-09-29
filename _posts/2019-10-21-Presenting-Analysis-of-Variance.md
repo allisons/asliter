@@ -1,8 +1,8 @@
 ---
 title: Presenting Analysis of Variance Results at Tree Scale
 subtitle:  
-cover-img: /assets/img/firstsign.jpg
-thumbnail-img: 
+cover-img: 
+thumbnail-img: /assets/img/firstsign.jpg
 share-img: /assets/img/firstsign.jpg
 tags: [trees,fisher,data_presentation]
 
